@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Treinando imagens dinâmicas</h1>
+    <p>Teste o ajuste das imagens deste site em diferentes dispositivos e medidas de zoom da tela</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/fundo-pequeno.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/fundo-medio.png" type="image/png">
+        <img src="imagens/fundo-grande.png" alt="Imagem grande com ajuste de tamanho flexível">
+    </picture>
+
+    <h1>Primeiros áudios do site</h1>
+    <p>Testando alguns áudios legais para dar um clima legal neste site [Audio desativado!]</p>
+    <!--<audio src="media/overboard-the-grey-room-golden-palmsOverboard - The Grey Room _ Golden Palms.mp3" autoplay controls></audio>-->
+
+    <h1>Testando outro áudio de maneira mais compatível</h1>
+    <p>Utilizando a tag source</p>
+    <audio autoplay controls>
+        <source src="media/night-shift-national-sweetheart.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
